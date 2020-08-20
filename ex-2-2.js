@@ -1,13 +1,21 @@
 
 
-arrNumber = [1,3,4,5,6,3,4,5,5,67,4,335,6];
+let binary = [0,1,0,0];
+let binary2 = [1,0,1,0,1,0,0];
 
-function lowestSum(arr){
-    arr.sort(function(a, b) {
-        return a - b;
-      });
-    return arr[0]+arr[1];
+
+function makeNumber(binary){
+    let binaryReverse = binary.reverse();
+    let binarySum = 0;
+    for(i = 1; i< binaryReverse.length-1;i++){
+        if(i === 2){
+            binarySum += (binaryReverse[i] *2);
+        }
+        else{
+            binarySum += (binaryReverse[i] * Math.pow(2, i));
+        }
+    }
+    return binarySum
 }
 
-console.log(lowestSum(arrNumber));
-
+console.log(makeNumber(binary2));
