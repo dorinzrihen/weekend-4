@@ -2,7 +2,7 @@
 
 
 function toCamelCase(str){
-    strArr = str.includes('-') ? str.split('-') : str.split('_')
+    let strArr = str.includes('-') ? str.split('-') : str.split('_')
     for(const word of strArr){
         let changeWord = word.replace(word[0],word[0].toUpperCase());
         strArr[strArr.indexOf(word)] = changeWord;

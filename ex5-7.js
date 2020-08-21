@@ -1,8 +1,8 @@
 
 
 function shortestWord(str){
-    arrShort = str.split(' ');
-    arrShortLen = []
+    let arrShort = str.split(' ');
+    let arrShortLen = []
 
     for (const word of arrShort){
         arrShortLen.push(word.length);

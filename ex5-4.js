@@ -1,7 +1,7 @@
 
 
 function toWeirdCase (str){
-    arr = str.split("");
+    let arr = str.split("");
     for (i = 0 ; i<arr.length ; i+=2){
         arr[i] = arr[i].toUpperCase();
     }

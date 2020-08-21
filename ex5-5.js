@@ -2,7 +2,7 @@
 
 
 function abbreviate(fullName){
-    arrFullName = fullName.split(' ');
+    let arrFullName = fullName.split(' ');
     return `${arrFullName[0][0].toUpperCase()}.${arrFullName[1][0].toUpperCase()}`
 }
 
