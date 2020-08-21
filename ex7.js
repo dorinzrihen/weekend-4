@@ -1,7 +1,7 @@
 const array1 = ['a', 'b', 'c'];
 const array2 = [1,4,5,6,3,55,7,4,5,3];
 
-ForEach
+// ForEach
 
 function myForEach(x){
     for (const i in x){
@@ -12,7 +12,7 @@ function myForEach(x){
 myForEach(array1);
 console.log(array1);
 
-Filter 
+// Filter 
 
 function myFilter(arr){
     let filterArr = [];
@@ -25,7 +25,7 @@ function myFilter(arr){
 const a = myFilter(array2);
 console.log(a);
 
-map
+// map
 
 function myMap(x){
     let mapArr = []
