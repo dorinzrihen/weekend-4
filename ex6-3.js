@@ -1,7 +1,7 @@
 
 
 function longest(a,b){
-    let arr = a.split('')+b.split('');
+    let arr = a+b.split("");
     let obj = {};
 
     for( const index of arr){

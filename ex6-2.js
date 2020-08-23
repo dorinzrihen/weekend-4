@@ -1,15 +1,15 @@
 
-function duplicateCaouner(str){
+function duplicateCounter(str){
     let obj = {};
-    let arr = str.split('');
+    let arr = str.toLowerCase().split('');
     let sumDuplicate = 0;
     for( const index of arr){
         obj[index] = obj[index] ? obj[index]+=1 : obj[index] = 1;
     }
-    for( const [key, value] of Object.entries(obj)){
-        value > 1 ? sumDuplicate++ : sumDuplicate;
+    for( const key in obj){
+        obj[key] > 1 ? sumDuplicate++ : sumDuplicate;
     }
     return sumDuplicate;
 }
 
-console.log(duplicateCaouner("ssdfvFFSDsfcnnrj"));
+console.log(duplicateCounter("aabbbbBBbcr"));

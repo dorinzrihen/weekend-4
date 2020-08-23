@@ -3,14 +3,14 @@
 
 
 const tribonacci =(n) => {
-    let previusNum = [1,1,1];
+    let previousNum = [1,1,1];
     for(i = 3; i< n;i++){
-        let lowetNum = Math.min(...previusNum);
-        previusNum[previusNum.indexOf(lowetNum)] = previusNum.reduce(function(pre1,pre2){
+        let lowestNum = Math.min(...previousNum);
+        previousNum[previousNum.indexOf(lowestNum)] = previousNum.reduce(function(pre1,pre2){
             return pre1+pre2;
-        })
+        });
     }
-    return Math.max(...previusNum);
+    return Math.max(...previousNum);
     
 }
 console.log(tribonacci(8));

@@ -7,7 +7,7 @@ const fibonacci =(n) => {
     for(i = 2; i< n;i++){
         previusNum1 >= previusNum2 ? previusNum2 += previusNum1 : previusNum1 += previusNum2;
     }
-    return previusNum1 > previusNum2 ? previusNum1 : previusNum2;s
+    return previusNum1 > previusNum2 ? previusNum1 : previusNum2;
 }
 
 console.log(fibonacci(14));
